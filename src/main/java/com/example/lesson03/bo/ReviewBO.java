@@ -25,5 +25,14 @@ public class ReviewBO {
 			) {
 		return reviewMapper.insertReviewAsField(storeId,menu,userName, point,review);
 	}
+	public int updateReviewById(
+			int id, 
+			String review) {
+	return reviewMapper.updateReviewById(id, review);		
+	}
+	public void deleteReviewById(int id) {
+		reviewMapper.deleteReviewById(id);
+	}
+	
 	
 }
